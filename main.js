@@ -3,4 +3,4 @@ function dodaj(liczba) {
 }
 
 
-console.log(dodaj(45) )
+console.log(dodaj(33) )
