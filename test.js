@@ -1,1 +1,1 @@
-console.log('This would be test scripts etc')
+console.log('This would be test scripts')
