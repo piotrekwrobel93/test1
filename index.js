@@ -4,7 +4,7 @@ const app = express()
 
 
 app.get('/', (req, res) => {
-    res.send({ message: 'Home page is here!' })
+    res.send({ message: 'Home page is here! :D' })
     res.status(200)
 })
 
