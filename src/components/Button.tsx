@@ -8,6 +8,6 @@ interface IProps {
 export const Button :React.FC<IProps>= ({ onClick, value }: IProps) => {
 
     return(
-        <button onClick={onClick}>{value}</button>
+        <button className="button1" onClick={onClick}>{value}</button>
     )
 }
