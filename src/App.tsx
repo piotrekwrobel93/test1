@@ -1,10 +1,16 @@
 import React from 'react';
 import {Welcome} from './components/Welcome'
+import {Button} from './components/Button'
 
+
+const handleClick = () => {
+  console.log('Clicked button :)')
+}
 function App() {
   return (
     <div>
       <Welcome name="Coder" title="Mr"></Welcome>
+      <Button value="This is button" onClick={handleClick} />
     </div>
   );
 }
