@@ -12,7 +12,7 @@ export const Welcome :React.FC<IProps>= ({ title, name }: IProps) => {
     }, [])
     return(
         <div>
-            <p>Welcome :D
+            <p>Welcome :D :D
             </p>
             { title && <p>{title}</p>}
             { name && <p>{name}</p>}
