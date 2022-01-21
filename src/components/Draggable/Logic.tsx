@@ -1,18 +1,31 @@
-import React from "react"
+import React, { useState } from "react"
 
 type ReturnProps = {
-    onMouseMove: (event: React.MouseEvent) => void,
-    onMouseUp: (event: React.MouseEvent) => void,
-    onMouseDown: (event: React.MouseEvent) => void,
+    onMouseMove: () => void,
+    onMouseUp: () => void,
+    onMouseDown: () => void,
 }
 const Logic = ():ReturnProps => {
 
+    const [isMoving, setIsMoving] = useState<boolean>(false)
     
-    const onMouseMove = (event: React.MouseEvent) => {}
+    const onMouseMove = () => {
+        if (isMoving) {
+            console.log('moving your mouse over canvas')
+        }
+    }
     // 
-    const onMouseDown = (event: React.MouseEvent) => {}
+    const onMouseDown = () => {
+        if (!isMoving) {
+            setIsMoving(!isMoving)
+        }
+    }
     // 
-    const onMouseUp = (event: React.MouseEvent) => {}
+    const onMouseUp = () => {
+        if (isMoving) {
+            setIsMoving(false)
+        }
+    }
 
     return {
         onMouseMove,

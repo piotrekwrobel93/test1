@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
-import Logic from './CanvasLogic'
+import Logic from './Logic'
 // types
 interface IProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode,
