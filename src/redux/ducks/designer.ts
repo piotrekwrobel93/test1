@@ -17,6 +17,7 @@ const designerSlice = createSlice({
             state.backgroundColor = '#333'
         },
         changeBackgroundWithAction(state, action: PayloadAction<string>) {
+            console.log("changing background to ", action.payload);
             state.backgroundColor = action.payload
         }
     }
