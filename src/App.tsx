@@ -6,7 +6,7 @@ import Draggable from './components/Draggable';
 import { IItem } from './types';
 import cuid from 'cuid';
 import { useAppDispatch, useAppSelector } from './redux/hooks';
-import {changeBackground, changeBackgroundWithAction} from './redux/ducks/designer'
+import {changeBackgroundWithAction} from './redux/ducks/designer'
 
 const CanvasWrapper = styled.div`
   width: 100vw;
